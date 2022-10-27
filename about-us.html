@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Gericht-about-us</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20221026221237">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css?_v=20221026221237" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+	<script defer src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js?_v=20221026221237" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+	<script defer src="js/app.min.js?_v=20221026221237"></script>
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+	<div class="preloader" style="
+		position: fixed;
+		left: 0;
+		top: 0;
+		background: black;
+		width: 100vw;
+		height: 100vh;
+		overflow: hidden;
+		z-index: 200;">
+	</div>
+	<div class="wrapper" id="top">
+		<header class="header">
+			<div class="header__container header__container--wide">
+				<div class="header__column">
+					<a href="" class="header__logo">Gericht</a>
+				</div>
+				<div class="header__column header__column--wide">
+					<div class="header__menu menu">
+
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+								<li class="menu__item"><a href="coming-soon.html" class="menu__link">Pages</a></li>
+								<li class="menu__item"><a href="contact-us.html" class="menu__link">Contact Us</a></li>
+								<li class="menu__item"><a href="" class="menu__link">Blog</a></li>
+								<li class="menu__item"><a href="coming-soon.html" class="menu__link">Landing</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div data-adaptive=".menu__body, 479.98" class="header__column header__column--autorisation">
+					<ul class="header__autorisation autorisation">
+						<li class="autorisation__item">
+							<a href="" class="autorisation__link">Log in / registration</a>
+						</li>
+						<li class="autorisation__item">
+							<a href="" class="autorisation__link">book table</a>
+						</li>
+					</ul>
+				</div>
+				<button type="button" class="menu__icon icon-menu"><span></span></button>
+			</div>
+		</header>
+		<main class="mainpage about-us">
+			<section class="about-us__slider top-section header-slider">
+				<div class="header-slider__block body-contact-slider">
+					<div class="header-slider__slider swiper3">
+						<div class="header-slider__wrapper swiper-wrapper">
+							<div class="header-slider__slide swiper-slide">
+								<div class="header-slider__image">
+									<picture><source data-srcset="img/header-slider/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="swiper-lazy" data-src="img/header-slider/01.jpg" alt="hall"></picture>
+								</div>
+								<div class="header-slider__title">
+									<h3 class="header-slider__title-text">Welcome to Gerícht</h3>
+									<nav class="header-slider__links">
+										<ul>
+											<li><a class="header-slider__link--home" href="index.html">Home</a></li>
+											<li class="header-slider__link--current">About Us</li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+							<div class="header-slider__slide swiper-slide">
+								<div class="header-slider__image">
+									<picture><source data-srcset="img/header-slider/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="swiper-lazy" data-src="img/header-slider/02.jpg" alt="hall"></picture>
+								</div>
+								<div class="header-slider__title">
+									<h3 class="header-slider__title-text">About Us</h3>
+									<nav class="header-slider__links">
+										<ul>
+											<li><a class="header-slider__link--home" href="index.html">Home</a></li>
+											<li class="header-slider__link--current">contact Us</li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="mainpage__decor">
+				<section class="about-us__history history counter">
+					<div class="history__container">
+						<div class="history__head block-header">
+							<div class="block-header__label">Our History</div>
+							<h2 class="block-header__title title--medium">serving customers for over a decade</h2>
+						</div>
+						<div class="history__body">
+							<div class="history__column left-column">
+								<p class="history__text left-column__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</p>
+								<picture><source srcset="img/about-us/front-of-a-bar.webp" type="image/webp"><img src="img/about-us/front-of-a-bar.jpg" alt="bar" class="history__image left-column__image"></picture>
+							</div>
+							<div class="history__column right-column">
+								<picture><source srcset="img/about-us/bar.webp" type="image/webp"><img src="img/about-us/bar.jpg" alt="bar" class="history__image right-column__image"></picture>
+								<h4 class="right-column__title">Over the years</h4>
+								<div class="history__achievements achievements">
+									<ul>
+										<li class="achievements__item">
+											<h5 class="achievements__title" data-counters="'500">50+</h5>
+											<p class="achievements__subtitle">Breakfast<br>Options</p>
+										</li>
+										<li class="achievements__item achievements--line">
+										</li>
+										<li class="achievements__item">
+											<h5 class="achievements__title" data-counters="'500">30+</h5>
+											<p class="achievements__subtitle">Dinner<br>Options</p>
+										</li>
+										<li class="achievements__item achievements--line">
+										</li>
+										<li class="achievements__item">
+											<h5 class="achievements__title" data-counters="'500">8</h5>
+											<p class="achievements__subtitle">New<br>Locations</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="about-us__video block-video">
+					<div class="block-video__container">
+						<div class="block-video__head block-header">
+							<div class="block-header__label">About Us</div>
+							<h2 class="block-header__title title--medium">Happy Hours with Us</h2>
+							<p class="block-header__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</p>
+						</div>
+						<div class="about-video video--block" data-watch="video">
+							<video id="video" data-src="files/video.mp4" muted class="video-block__video"></video>
+						</div>
+					</div>
+				</section>
+				<section class="mainpage__chef chef-word section--bg">
+					<div class="chef-word__container">
+						<div class="chef-word__image">
+							<picture><source srcset="img/mainpage/main-chef/chef.webp" type="image/webp"><img src="img/mainpage/main-chef/chef.jpg" alt="chef"></picture>
+						</div>
+						<div class="chef-word__content">
+							<div class="chef-word__head block-header">
+								<div class="block-header__label">Chef’s Word</div>
+								<h2 class="block-header__title title--medium">What we believe in</h2>
+							</div>
+							<div class="chef-word__text-body">
+								<p class="chef-word__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit auctor sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue ac consequat, aliquam molestie lectus eu. Congue iaculis integer curabitur semper sit nunc.</p>
+							</div>
+							<div class="chef-word___initials">
+								<p class="chef-word__name">Kevin Luo</p>
+								<p class="chef-word__jobtitle">Chef & Founder</p>
+							</div>
+							<div class="chef-word__signature">
+								<img src="img/mainpage/main-chef/Kevin-Luo.svg" alt="chef's signature">
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="mainpage__customers customers">
+					<div class="customers__container">
+						<div class="customers__head block-header">
+							<div class="block-header__label">Testimony</div>
+							<h2 class="block-header__title title--medium">Happy customers</h2>
+						</div>
+						<div class="customers__body block-customers">
+							<div class="block-customers__body body-customers">
+								<div class="body-customers__image">
+									<picture><source srcset="img/mainpage/main-customers/01.webp" type="image/webp"><img src="img/mainpage/main-customers/01.jpg" alt="happy man"></picture>
+								</div>
+								<div class="body-customers__content">
+									<p class="body-customers__text">Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.</p>
+									<p class="body-customers__name">Wade Warren</p>
+									<p class="body-customers__jobtitle">Sommelier</p>
+								</div>
+							</div>
+							<div class="block-customers__body body-customers">
+								<div class="body-customers__image">
+									<picture><source srcset="img/mainpage/main-customers/02.webp" type="image/webp"><img src="img/mainpage/main-customers/02.jpg" alt="happy woman"></picture>
+								</div>
+								<div class="body-customers__content">
+									<p class="body-customers__text">Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.</p>
+									<p class="body-customers__name">Jane Cooper</p>
+									<p class="body-customers__jobtitle">Sommelier</p>
+								</div>
+							</div>
+							<div class="block-customers__body body-customers">
+								<div class="body-customers__image">
+									<picture><source srcset="img/mainpage/main-customers/03.webp" type="image/webp"><img src="img/mainpage/main-customers/03.jpg" alt="happy man"></picture>
+								</div>
+								<div class="body-customers__content">
+									<p class="body-customers__text">Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.</p>
+									<p class="body-customers__name">Robert Fox</p>
+									<p class="body-customers__jobtitle">Chef</p>
+								</div>
+							</div>
+							<div class="block-customers__body body-customers">
+								<div class="body-customers__image">
+									<picture><source srcset="img/mainpage/main-customers/04.webp" type="image/webp"><img src="img/mainpage/main-customers/04.jpg" alt="happy woman"></picture>
+								</div>
+								<div class="body-customers__content">
+									<p class="body-customers__text">Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.</p>
+									<p class="body-customers__name">Brooklyn Simmons</p>
+									<p class="body-customers__jobtitle">Caterer</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="mainpage__gallery gallery">
+					<div class="gallery__container gallery__no-before">
+						<div class="gallery__content">
+							<div class="gallery__head block-header">
+								<div class="block-header__label">Instagram</div>
+								<h2 class="block-header__title title--medium">Photo Gallery</h2>
+							</div>
+							<p class="gallery__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mu.</p>
+							<a href="" class="gallery__button button">View More</a>
+						</div>
+						<div class="gallery__slider swiper">
+							<div class="gallery__wrapper swiper-wrapper">
+								<a href="" class="gallery__slide-ibg swiper-slide">
+									<picture><source data-srcset="img/mainpage/main-gallery/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="swiper-lazy" data-src="img/mainpage/main-gallery/01.jpg" alt="food"></picture>
+								</a>
+								<a href="" class="gallery__slide-ibg swiper-slide">
+									<picture><source data-srcset="img/mainpage/main-gallery/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="swiper-lazy" data-src="img/mainpage/main-gallery/02.jpg" alt="food"></picture>
+								</a>
+								<a href="" class="gallery__slide-ibg swiper-slide">
+									<picture><source data-srcset="img/mainpage/main-gallery/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="swiper-lazy" data-src="img/mainpage/main-gallery/03.jpg" alt="food"></picture>
+								</a>
+								<a href="" class="gallery__slide-ibg swiper-slide">
+									<picture><source data-srcset="img/mainpage/main-gallery/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="swiper-lazy" data-src="img/mainpage/main-gallery/04.jpg" alt="food"></picture>
+								</a>
+								<a href="coming-soon.html" class="gallery__slide-ibg swiper-slide">
+									<picture><source data-srcset="img/mainpage/main-gallery/05.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="swiper-lazy" data-src="img/mainpage/main-gallery/05.jpg" alt="food"></picture>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="mainpage__subscription subscription">
+					<div class="subscription__container subscription-decor">
+						<div class="subscription__head block-header">
+							<div class="block-header__label">Newsletter</div>
+							<h2 class="block-header__title title--medium">Subscribe to Our Newsletter</h2>
+							<p class="block-header__subtitle">And never miss latest Updates!</p>
+						</div>
+						<form action="#" class="subscription__form form-subscription">
+							<input data-required autocomplete="off" type="email" data-error="Error" placeholder="Email Address" class="input_error input-subscribe">
+							<button type="submit" class="subscription__button button">Subscribe</button>
+						</form>
+					</div>
+				</section>
+			</div>
+		</main>
+		<footer class="footer section--bg">
+			<div class="footer__container">
+				<div><a href="#top" data-goto="#top" class="footer__scroll scroll">TOP</a></div>
+				<div class="footer__header">
+					<div class="footer__column column">
+						<ul>
+							<li class="column__title">Contact Us
+								<ul class="column__content">
+									<li class="column__text">9 W 53rd St, New York, NY 10019, USA</li>
+									<li class="column__text">
+										<a href="tel:+12123441230">+1 212-344-1230</a>
+										<a href="te:+12125551230">+1 212-555-1230</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__column-big">
+						<div class="footer__logo"><a href="" class="header__logo footer__logo">Gericht</a></div>
+						<div class="footer__social social">
+							<p class="social__text">"The best way to find yourself is to lose yourself in the service of others.”</p>
+							<div class="social__links links">
+								<a class="links__facebook"></a>
+								<a class="links__twitter"></a>
+								<a class="links__instagram"></a>
+							</div>
+						</div>
+					</div>
+					<div class="footer__column column">
+						<ul>
+							<li class="column__title">Working Hours
+								<ul class="column__content">
+									<li class="column__text">Monday-Friday:<br>08:00 am -12:00 am</li>
+									<li class="column__text">Saturday-Sunday:<br>07:00am -11:00 pm</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__footer">
+					<p class="footer__text">2021 Gerícht. All Rights reserved.</p>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<!-- 
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+			</div>
+		</div>
+	</div>
+</div> -->
+
+</body>
+
+</html>

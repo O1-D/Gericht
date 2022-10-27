@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Gericht-home</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20221026221237">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css?_v=20221026221237" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+	<script defer src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js?_v=20221026221237" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+	<script defer src="js/app.min.js?_v=20221026221237"></script>
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+	<div class="preloader" style="
+		position: fixed;
+		left: 0;
+		top: 0;
+		background: black;
+		width: 100vw;
+		height: 100vh;
+		overflow: hidden;
+		z-index: 200;">
+	</div>
+	<div class="wrapper" id="top">
+		<header class="header">
+			<div class="header__container header__container--wide">
+				<div class="header__column">
+					<a href="" class="header__logo">Gericht</a>
+				</div>
+				<div class="header__column header__column--wide">
+					<div class="header__menu menu">
+
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+								<li class="menu__item"><a href="coming-soon.html" class="menu__link">Pages</a></li>
+								<li class="menu__item"><a href="contact-us.html" class="menu__link">Contact Us</a></li>
+								<li class="menu__item"><a href="coming-soon.html" class="menu__link">Blog</a></li>
+								<li class="menu__item"><a href="coming-soon.html" class="menu__link">Landing</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div data-adaptive=".menu__body, 479.98" class="header__column header__column--autorisation">
+					<ul class="header__autorisation autorisation">
+						<li class="autorisation__item">
+							<a href="" class="autorisation__link">Log in / registration</a>
+						</li>
+						<li class="autorisation__item">
+							<a href="" class="autorisation__link">book table</a>
+						</li>
+					</ul>
+				</div>
+				<button type="button" class="menu__icon icon-menu"><span></span></button>
+			</div>
+		</header>
+		<main class="mainpage">
+			<section data-fullscreen class="mainpage__base--slider base-slider slider-base-bg top-section">
+				<div class="base-slider__container base-slider__container--wide">
+					<div class="base-slider__container body-base-slider">
+						<div class="body-base-slider__slider swiper">
+							<div class="body-base-slider__wrapper swiper-wrapper">
+								<div class="body-base-slider__slide swiper-slide slide-base-slider">
+									<div class="slide-base-slider__content">
+										<div class="slide-base-slider__header block-header block-header--big block-header--left">
+											<div class="block-header__label">Chase the new Flavour</div>
+											<h2 class="block-header__title title--big">The key to Fine dining</h2>
+										</div>
+										<p class="slide-base-slider__text">Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet tellus </p>
+										<a href="coming-soon.html" class="slide-base-slider__button button">Explore Menu</a>
+									</div>
+									<div class="slide-base-slider__image--ibg">
+										<picture><source data-srcset="img/mainpage/main-base-slider/eggs-02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="swiper-lazy" data-src="img/mainpage/main-base-slider/eggs-02.jpg" alt="image of fried eggs"></picture>
+									</div>
+								</div>
+								<div class="body-base-slider__slide swiper-slide slide-base-slider">
+									<div class="slide-base-slider__content">
+										<div class="slide-base-slider__header block-header block-header--big block-header--left">
+											<div class="block-header__label">Chase the new Flavour</div>
+											<h2 class="block-header__title title--big">Discover new</h2>
+										</div>
+										<p class="slide-base-slider__text">Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet tellus </p>
+										<a href="coming-soon.html" class="slide-base-slider__button button">Explore Menu</a>
+									</div>
+									<div class="slide-base-slider__image--ibg">
+										<picture><source data-srcset="img/mainpage/main-base-slider/fish.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="swiper-lazy" data-src="img/mainpage/main-base-slider/fish.jpg" alt="image of fried eggs"></picture>
+									</div>
+								</div>
+								<div class="body-base-slider__slide swiper-slide slide-base-slider">
+									<div class="slide-base-slider__content">
+										<div class="slide-base-slider__header block-header block-header--big block-header--left">
+											<div class="block-header__label">Chase the new Flavour</div>
+											<h2 class="block-header__title title--big">Book table now</h2>
+										</div>
+										<p class="slide-base-slider__text">Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet tellus </p>
+										<a href="coming-soon.html" class="slide-base-slider__button button">Explore Menu</a>
+									</div>
+									<div class="slide-base-slider__image--ibg">
+										<picture><source data-srcset="img/mainpage/main-base-slider/eggs-01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="swiper-lazy" data-src="img/mainpage/main-base-slider/eggs-01.jpg" alt="image of fried eggs"></picture>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="body-base-slider__navigation"></div>
+					</div>
+					<nav class="base-slider__menu slider-menu">
+						<ul>
+							<li><a href="index.html" class="slider-menu__link link--active">#Gericht</a></li>
+							<li><a href="bar.html" class="slider-menu__link link--unactive">#Bar</a></li>
+						</ul>
+					</nav>
+					<a href="#about-section" data-goto="#about-section" class="base-slider__scroll scroll">Scroll</a>
+				</div>
+			</section>
+			<div class="mainpage__decor">
+				<section class="mainpage__about about-section section--bg" id="about-section">
+					<div class="about-section__container">
+						<div class="about-section__content">
+							<h4 class="about-section__title title--medium">About Us</h4>
+							<p class="about-section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat.</p>
+							<a href="about-us.html" class="about-section__button button">Know Menu</a>
+						</div>
+						<div class="about-section__image">
+							<picture><source srcset="img/mainpage/main-about/knife.webp" type="image/webp"><img src="img/mainpage/main-about/knife.png" alt="knife"></picture>
+						</div>
+						<div class="about-section__content">
+							<h4 class="about-section__title title--medium">Our History</h4>
+							<p class="about-section__text">Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus placerat morbi volutpat habitasse interdum mi aliquam In sed odio nec aliquet.</p>
+							<a href="about-us.html" class="about-section__button button">Know Menu</a>
+						</div>
+					</div>
+				</section>
+				<section class="mainpage__book book-table">
+					<div class="book-table__container">
+						<div class="book-table__body">
+							<div class="book-table__header block-header">
+								<div class="block-header__label">Reservations</div>
+								<h2 class="block-header__title title--medium">Book A Table</h2>
+							</div>
+							<form action="#" class="book-table__form form-book">
+								<div class="form-book__options">
+									<div class="form-book__option">
+										<select data-scroll name="form[]" id="" class="form">
+											<option value="1" selected>1 person</option>
+											<option value="2">2 person</option>
+											<option value="3">3 person</option>
+											<option value="4">4 person</option>
+										</select>
+									</div>
+									<div class="form-book__option">
+										<select data-scroll name="form[]" id="" class="form">
+											<option value="1" selected>12/05/2021</option>
+											<option value="2">13/05/2021</option>
+											<option value="3">14/05/2021</option>
+											<option value="4">15/05/2021</option>
+										</select>
+									</div>
+									<div class="form-book__option">
+										<select data-scroll name="form[]" id="" class="form">
+											<option value="1" selected>11:00 AM</option>
+											<option value="2">12:00 AM</option>
+											<option value="3">1:00 AM</option>
+											<option value="4">2:00 AM</option>
+											<option value="3">3:00 PM</option>
+											<option value="4">4:00 PM</option>
+										</select>
+									</div>
+								</div>
+								<button type="submit" class="book-table__button button">Book Now</button>
+							</form>
+						</div>
+					</div>
+				</section>
+				<section class="mainpage__menu menu-block">
+					<div class="menu-block__full">
+						<div class="block-images">
+							<div class="block-images__slider swiper2">
+								<div class="block-images__wrapper swiper-wrapper">
+									<div class="block-images__slide swiper-slide">
+										<picture><source srcset="img/mainpage/main-menu/ice-cream.webp" type="image/webp"><img class="block-images__image" src="img/mainpage/main-menu/ice-cream.jpg" alt="ice-cream"></picture>
+									</div>
+									<div class="block-images__slide swiper-slide">
+										<picture><source srcset="img/mainpage/main-menu/glass.webp" type="image/webp"><img class="block-images__image" src="img/mainpage/main-menu/glass.jpg" alt="glass"></picture>
+									</div>
+									<div class="block-images__slide swiper-slide">
+										<picture><source srcset="img/mainpage/main-menu/eggs.webp" type="image/webp"><img class="block-images__image" src="img/mainpage/main-menu/eggs.jpg" alt="eggs"></picture>
+									</div>
+									<div class="block-images__slide swiper-slide">
+										<picture><source srcset="img/mainpage/main-menu/cake.webp" type="image/webp"><img class="block-images__image" src="img/mainpage/main-menu/cake.jpg" alt="cake"></picture>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="menu-block__content">
+							<nav class="menu-block__menu">
+								<ul class="menu-block__items">
+									<li><a class="menu-block__item" href="coming-soon.html">Bar<br>Menu</a></li>
+									<li><a class="menu-block__item" href="coming-soon.html">Food<br>Menu</a></li>
+									<li><a class="menu-block__item" href="coming-soon.html">Desserts<br>Menu</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</section>
+				<section class="mainpage__special special-today">
+					<div class="special-today__container">
+						<div class="special-today__header block-header">
+							<div class="block-header__label">Menu that fits you palatte</div>
+							<h2 class="block-header__title title--medium">Today’s Special</h2>
+						</div>
+						<div class="special-today__body">
+							<div class="special-today__content content-special">
+								<h4 class="content-special-title">Wine & Beer</h4>
+								<div class="content-special__item item-special">
+									<div class="item-special__row">
+										<div class="item-special__name">Chapel Hill Shiraz</div>
+										<div class="item-special__decor"></div>
+										<div class="item-special__value">$56</div>
+									</div>
+									<div class="item-special__info">AU | Bottle</div>
+								</div>
+								<div class="content-special__item item-special">
+									<div class="item-special__row">
+										<div class="item-special__name">Catena Malbec</div>
+										<div class="item-special__decor"></div>
+										<div class="item-special__value">$59</div>
+									</div>
+									<div class="item-special__info">AR | Bottle</div>
+								</div>
+								<div class="content-special__item item-special">
+									<div class="item-special__row">
+										<div class="item-special__name">La Vieille Rosé</div>
+										<div class="item-special__decor"></div>
+										<div class="item-special__value">$44</div>
+									</div>
+									<div class="item-special__info">FR | 750 m</div>
+								</div>
+								<div class="content-special__item item-special">
+									<div class="item-special__row">
+										<div class="item-special__name">Rhino Pale Ale</div>
+										<div class="item-special__decor"></div>
+										<div class="item-special__value">$31</div>
+									</div>
+									<div class="item-special__info">CA | 750 m</div>
+								</div>
+								<div class="content-special__item item-special">
+									<div class="item-special__row">
+										<div class="item-special__name">Irish Guinness</div>
+										<div class="item-special__decor"></div>
+										<div class="item-special__value">$26</div>
+									</div>
+									<div class="item-special__info">IE | 750 ml</div>
+								</div>
+							</div>
+							<div class="special-today__image">
+								<picture><source srcset="img/mainpage/main-special-today/bottle.webp" type="image/webp"><img src="img/mainpage/main-special-today/bottle.jpg" alt="bottle"></picture>
+							</div>
+							<div class="special-today__content content-special">
+								<h4 class="content-special-title">Cocktails</h4>
+								<div class="content-special__item item-special">
+									<div class="item-special__row">
+										<div class="item-special__name">Aperol Spritz</div>
+										<div class="item-special__decor"></div>
+										<div class="item-special__value">$20</div>
+									</div>
+									<div class="item-special__info">Aperol | Villa Marchesi prosecco | soda | 30ml</div>
+								</div>
+								<div class="content-special__item item-special">
+									<div class="item-special__row">
+										<div class="item-special__name">Dark 'N' Stormy
+										</div>
+										<div class="item-special__decor"></div>
+										<div class="item-special__value">$16</div>
+									</div>
+									<div class="item-special__info">Dark rum | Ginger beer | Slice of lime. </div>
+								</div>
+								<div class="content-special__item item-special">
+									<div class="item-special__row">
+										<div class="item-special__name">Daiquiri</div>
+										<div class="item-special__decor"></div>
+										<div class="item-special__value">$10</div>
+									</div>
+									<div class="item-special__info">Rum | Citrus juice | Sugar</div>
+								</div>
+								<div class="content-special__item item-special">
+									<div class="item-special__row">
+										<div class="item-special__name">Old Fashioned</div>
+										<div class="item-special__decor"></div>
+										<div class="item-special__value">$31</div>
+									</div>
+									<div class="item-special__info">Bourbon | Brown sugar | Angostura Bitters</div>
+								</div>
+								<div class="content-special__item item-special">
+									<div class="item-special__row">
+										<div class="item-special__name">Negroni</div>
+										<div class="item-special__decor"></div>
+										<div class="item-special__value">$26</div>
+									</div>
+									<div class="item-special__info">Gin | Sweet Vermouth | Campari | Orange garnish</div>
+								</div>
+							</div>
+						</div>
+						<a href="coming-soon.html" class="special-today__button button">View More</a>
+					</div>
+				</section>
+				<section class="mainpage__chef chef-word section--bg">
+					<div class="chef-word__container">
+						<div class="chef-word__image">
+							<picture><source srcset="img/mainpage/main-chef/chef.webp" type="image/webp"><img src="img/mainpage/main-chef/chef.jpg" alt="chef"></picture>
+						</div>
+						<div class="chef-word__content">
+							<div class="chef-word__head block-header">
+								<div class="block-header__label">Chef’s Word</div>
+								<h2 class="block-header__title title--medium">What we believe in</h2>
+							</div>
+							<div class="chef-word__text-body">
+								<p class="chef-word__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit auctor sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue ac consequat, aliquam molestie lectus eu. Congue iaculis integer curabitur semper sit nunc.</p>
+							</div>
+							<div class="chef-word___initials">
+								<p class="chef-word__name">Kevin Luo</p>
+								<p class="chef-word__jobtitle">Chef & Founder</p>
+							</div>
+							<div class="chef-word__signature">
+								<img src="img/mainpage/main-chef/Kevin-Luo.svg" alt="chef's signature">
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="mainpage__customers customers">
+					<div class="customers__container">
+						<div class="customers__head block-header">
+							<div class="block-header__label">Testimony</div>
+							<h2 class="block-header__title title--medium">Happy customers</h2>
+						</div>
+						<div class="customers__body block-customers">
+							<div class="block-customers__body body-customers">
+								<div class="body-customers__image">
+									<picture><source srcset="img/mainpage/main-customers/01.webp" type="image/webp"><img src="img/mainpage/main-customers/01.jpg" alt="happy man"></picture>
+								</div>
+								<div class="body-customers__content">
+									<p class="body-customers__text">Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.</p>
+									<p class="body-customers__name">Wade Warren</p>
+									<p class="body-customers__jobtitle">Sommelier</p>
+								</div>
+							</div>
+							<div class="block-customers__body body-customers">
+								<div class="body-customers__image">
+									<picture><source srcset="img/mainpage/main-customers/02.webp" type="image/webp"><img src="img/mainpage/main-customers/02.jpg" alt="happy woman"></picture>
+								</div>
+								<div class="body-customers__content">
+									<p class="body-customers__text">Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.</p>
+									<p class="body-customers__name">Jane Cooper</p>
+									<p class="body-customers__jobtitle">Sommelier</p>
+								</div>
+							</div>
+							<div class="block-customers__body body-customers">
+								<div class="body-customers__image">
+									<picture><source srcset="img/mainpage/main-customers/03.webp" type="image/webp"><img src="img/mainpage/main-customers/03.jpg" alt="happy man"></picture>
+								</div>
+								<div class="body-customers__content">
+									<p class="body-customers__text">Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.</p>
+									<p class="body-customers__name">Robert Fox</p>
+									<p class="body-customers__jobtitle">Chef</p>
+								</div>
+							</div>
+							<div class="block-customers__body body-customers">
+								<div class="body-customers__image">
+									<picture><source srcset="img/mainpage/main-customers/04.webp" type="image/webp"><img src="img/mainpage/main-customers/04.jpg" alt="happy woman"></picture>
+								</div>
+								<div class="body-customers__content">
+									<p class="body-customers__text">Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.</p>
+									<p class="body-customers__name">Brooklyn Simmons</p>
+									<p class="body-customers__jobtitle">Caterer</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<div data-watch="video" class="video-block video--block">
+					<video id="video" data-src="files/video.mp4" muted class="video-block__video"></video>
+				</div>
+				<section class="mainpage__awards awards section--bg">
+					<div class="awards__container">
+						<div class="awards__body body-awards">
+							<div class="body-awards__head block-header">
+								<div class="block-header__label">Awards & recognition</div>
+								<h2 class="block-header__title title--medium">Our Laurels</h2>
+							</div>
+							<div class="body-awards__body">
+								<ul>
+									<li class="body-awards__content">
+										<img src="img/mainpage/main-awards/01.svg" alt="award number 1">
+										<p class="body-awards__text"><span class="body-awards__name">Bib Gourmond<br></span>Lorem ipsum dolor sit amet, consectetur.</p>
+									</li>
+									<li class="body-awards__content">
+										<img src="img/mainpage/main-awards/02.svg" alt="award number 2">
+										<p class="body-awards__text"><span class="body-awards__name">Rising Star<br></span>Lorem ipsum dolor sit amet, consectetur.</p>
+									</li>
+									<li class="body-awards__content">
+										<img src="img/mainpage/main-awards/03.svg" alt="award number 3">
+										<p class="body-awards__text"><span class="body-awards__name">AA Hospitality<br></span>Lorem ipsum dolor sit amet, consectetur.</p>
+									</li>
+									<li class="body-awards__content">
+										<img src="img/mainpage/main-awards/04.svg" alt="award number 4">
+										<p class="body-awards__text"><span class="body-awards__name">Outstanding Chef<br></span>Lorem ipsum dolor sit amet, consectetur.</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="body-awards__image">
+							<picture><source srcset="img/mainpage/main-awards/food.webp" type="image/webp"><img src="img/mainpage/main-awards/food.jpg" alt="some food"></picture>
+						</div>
+					</div>
+				</section>
+				<section class="mainpage__blog blog">
+					<div class="blog__container">
+						<div class="body-block__head block-header">
+							<div class="block-header__label">Blogs</div>
+							<h2 class="block-header__title title--medium">Gerícht updates</h2>
+						</div>
+						<div class="blog__body-block">
+							<article class="blog__body body-blog">
+								<a href="coming-soon.html"><picture><source srcset="img/mainpage/main-blog/meat.webp" type="image/webp"><img src="img/mainpage/main-blog/meat.jpg" alt="meat" class="body-blog__img"></picture></a>
+								<div class="body-blog__content">
+									<div class="body-blog__label">
+										<p class="body-blog__date">16 Apr 2021</p>
+										<p class="body-blog__author">-Annalisa L</p>
+									</div>
+									<a href="coming-soon.html" class="body-blog__title">tips for prepping and caring for your grill</a>
+									<p class="body-blog__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit<span class="dots1">...</span><span class="more1">scelerisque egestas mus in.Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></p>
+									<a href="coming-soon.html" data-num='1' class="body-blog__link">Read More</a>
+								</div>
+							</article>
+							<article class="blog__body body-blog">
+								<a href=""><picture><source srcset="img/mainpage/main-blog/drink.webp" type="image/webp"><img src="img/mainpage/main-blog/drink.jpg" alt="drink" class="body-blog__img"></picture></a>
+								<div class="body-blog__content">
+									<div class="body-blog__label">
+										<p class="body-blog__date">23 May 2021</p>
+										<p class="body-blog__author">-John Micheal</p>
+									</div>
+									<a href="coming-soon.html" class="body-blog__title">summer cocktails and mocktails</a>
+									<p class="body-blog__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit<span class="dots2">...</span><span class="more2">scelerisque egestas mus in.Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></p>
+									<a href="coming-soon.html" data-num='2' class="body-blog__link">Read More</a>
+								</div>
+							</article>
+							<article class="blog__body body-blog">
+								<a href=""><picture><source srcset="img/mainpage/main-blog/cutlets.webp" type="image/webp"><img src="img/mainpage/main-blog/cutlets.jpg" alt="cutlets" class="body-blog__img"></picture></a>
+								<div class="body-blog__content">
+									<div class="body-blog__label">
+										<p class="body-blog__date">06 Aug 2021</p>
+										<p class="body-blog__author">-Fred W</p>
+									</div>
+									<a href="coming-soon.html" class="body-blog__title">easy cooking for college students</a>
+									<p class="body-blog__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit<span class="dots3">...</span><span class="more3">scelerisque egestas mus in.Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></p>
+									<a href="coming-soon.html" data-num='3' class="body-blog__link">Read More</a>
+								</div>
+							</article>
+						</div>
+						<a href="coming-soon.html" class="body-blog__button button">View More</a>
+					</div>
+				</section>
+				<section class="mainpage__gallery gallery">
+					<div class="gallery__container">
+						<div class="gallery__content">
+							<div class="gallery__head block-header">
+								<div class="block-header__label">Instagram</div>
+								<h2 class="block-header__title title--medium">Photo Gallery</h2>
+							</div>
+							<p class="gallery__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mu.</p>
+							<a href="coming-soon.html" class="gallery__button button">View More</a>
+						</div>
+						<div class="gallery__slider swiper">
+							<div class="gallery__wrapper swiper-wrapper">
+								<a href="#" class="gallery__slide-ibg swiper-slide">
+									<picture><source data-srcset="img/mainpage/main-gallery/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="swiper-lazy" data-src="img/mainpage/main-gallery/01.jpg" alt="food"></picture>
+								</a>
+								<a href="#" class="gallery__slide-ibg swiper-slide">
+									<picture><source data-srcset="img/mainpage/main-gallery/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="swiper-lazy" data-src="img/mainpage/main-gallery/02.jpg" alt="food"></picture>
+								</a>
+								<a href="#" class="gallery__slide-ibg swiper-slide">
+									<picture><source data-srcset="img/mainpage/main-gallery/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="swiper-lazy" data-src="img/mainpage/main-gallery/03.jpg" alt="food"></picture>
+								</a>
+								<a href="#" class="gallery__slide-ibg swiper-slide">
+									<picture><source data-srcset="img/mainpage/main-gallery/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="swiper-lazy" data-src="img/mainpage/main-gallery/04.jpg" alt="food"></picture>
+								</a>
+								<a href="#" class="gallery__slide-ibg swiper-slide">
+									<picture><source data-srcset="img/mainpage/main-gallery/05.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="swiper-lazy" data-src="img/mainpage/main-gallery/05.jpg" alt="food"></picture>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="mainpage__subscription subscription">
+					<div class="subscription__container">
+						<div class="subscription__head block-header">
+							<div class="block-header__label">Newsletter</div>
+							<h2 class="block-header__title title--medium">Subscribe to Our Newsletter</h2>
+							<p class="block-header__subtitle">And never miss latest Updates!</p>
+						</div>
+						<form action="#" class="subscription__form form-subscription">
+							<input data-required autocomplete="off" type="email" data-error="Error" placeholder="Email Address" class="input_error input-subscribe">
+							<button type="submit" class="subscription__button button">Subscribe</button>
+						</form>
+					</div>
+				</section>
+			</div>
+		</main>
+		<footer class="footer section--bg">
+			<div class="footer__container">
+				<div><a href="#top" data-goto="#top" class="footer__scroll scroll">TOP</a></div>
+				<div class="footer__header">
+					<div class="footer__column column">
+						<ul>
+							<li class="column__title">Contact Us
+								<ul class="column__content">
+									<li class="column__text">9 W 53rd St, New York, NY 10019, USA</li>
+									<li class="column__text">
+										<a href="tel:+12123441230">+1 212-344-1230</a>
+										<a href="te:+12125551230">+1 212-555-1230</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__column-big">
+						<div class="footer__logo"><a href="" class="header__logo footer__logo">Gericht</a></div>
+						<div class="footer__social social">
+							<p class="social__text">"The best way to find yourself is to lose yourself in the service of others.”</p>
+							<div class="social__links links">
+								<a href="#" class="links__facebook"></a>
+								<a href="#" class="links__twitter"></a>
+								<a href="#" class="links__instagram"></a>
+							</div>
+						</div>
+					</div>
+					<div class="footer__column column">
+						<ul>
+							<li class="column__title">Working Hours
+								<ul class="column__content">
+									<li class="column__text">Monday-Friday:<br>08:00 am -12:00 am</li>
+									<li class="column__text">Saturday-Sunday:<br>07:00am -11:00 pm</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__footer">
+					<p class="footer__text">2021 Gerícht. All Rights reserved.</p>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<!-- 
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+			</div>
+		</div>
+	</div>
+</div> -->
+</body>
+
+</html>
