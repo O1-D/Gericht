@@ -1263,19 +1263,19 @@ textarea.input {
 }
 .menu__list {
   display: flex;
-  row-gap: 10px;
+/*   row-gap: 10px; */
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
-@supports (column-gap: clamp( 0.9375rem , -0.5144572954rem  +  3.024911032vw , 2rem )) {
+@supports (gap: clamp( 0.9375rem , -0.5144572954rem  +  3.024911032vw , 2rem )) {
   .menu__list {
-    column-gap: clamp( 0.9375rem , -0.5144572954rem  +  3.024911032vw , 2rem );
+    gap: clamp( 0.9375rem , -0.5144572954rem  +  3.024911032vw , 2rem );
   }
 }
-@supports not (column-gap: clamp( 0.9375rem , -0.5144572954rem  +  3.024911032vw , 2rem )) {
+@supports not (gap: clamp( 0.9375rem , -0.5144572954rem  +  3.024911032vw , 2rem )) {
   .menu__list {
-    column-gap: calc(0.9375rem + 1.0625 * (100vw - 48rem) / 35.125);
+    gap: calc(0.9375rem + 1.0625 * (100vw - 48rem) / 35.125);
   }
 }
 @media (max-width: 47.99875em) {
