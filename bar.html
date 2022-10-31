@@ -2,15 +2,14 @@
 <html lang="en">
 
 <head>
-	<title>Gericht-bar</title>
+	<title>Gericht</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20221026221237">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221031141642">
 	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css?_v=20221026221237" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
-	<script defer src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js?_v=20221026221237" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
-	<script defer src="js/app.min.js?_v=20221026221237"></script>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css?_v=20221031141642" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+	<script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js?_v=20221031141642" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -120,7 +119,7 @@
 							<form action="#" class="book-table__form form-book">
 								<div class="form-book__options">
 									<div class="form-book__option">
-										<select data-scroll name="form[]" class="form">
+										<select data-scroll name="form[]" id="" class="form">
 											<option value="1" selected>1 person</option>
 											<option value="2">2 person</option>
 											<option value="3">3 person</option>
@@ -128,15 +127,10 @@
 										</select>
 									</div>
 									<div class="form-book__option">
-										<select data-scroll name="form[]" class="form">
-											<option value="1" selected>12/05/2021</option>
-											<option value="2">13/05/2021</option>
-											<option value="3">14/05/2021</option>
-											<option value="4">15/05/2021</option>
-										</select>
+										<input autocomplete="off" type="text" name="form[]" data-calendar placeholder="Choose the date" class="input-date">
 									</div>
 									<div class="form-book__option">
-										<select data-scroll name="form[]" class="form">
+										<select data-scroll name="form[]" id="" class="form">
 											<option value="1" selected>11:00 AM</option>
 											<option value="2">12:00 AM</option>
 											<option value="3">1:00 AM</option>
@@ -331,8 +325,8 @@
 							<h2 class="block-header__title title--medium">Subscribe to Our Newsletter</h2>
 							<p class="block-header__subtitle">And never miss latest Updates!</p>
 						</div>
-						<form action="#" class="subscription__form form-subscription">
-							<input data-required autocomplete="off" type="email" data-error="Error" placeholder="Email Address" class="input_error input-subscribe">
+						<form action="#" class="subscription__form form-subscription" data-required>
+							<input data-required="email" autocomplete="off" type="email" data-error="Incorrect email" placeholder="Email Address" class="input_error input-subscribe">
 							<button type="submit" class="subscription__button button">Subscribe</button>
 						</form>
 					</div>
@@ -396,6 +390,8 @@
 	</div>
 </div> -->
 
+
+	<script src="js/app.min.js?_v=20221031141642"></script>
 </body>
 
 </html>
